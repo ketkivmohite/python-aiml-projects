@@ -1,21 +1,15 @@
-# Python Calculator
+My Python & AIML Learning Journey
+Welcome to my learning repository! I am using this space to document my journey as I build a series of Python projects, starting from the basics and moving towards concepts in Artificial Intelligence and Machine Learning.
 
-This is a simple calculator built using Python. It performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
+This repository is for anyone who is also starting their coding journey. You can follow along, use the code for inspiration, and see how a project is built from the ground up.
 
-## Features
-- Addition, subtraction, multiplication, division
-- Handles division by zero gracefully
-- Input validation to ensure only numbers are accepted
+How to Use This Repository
+All projects are organized into their own folders. Each project folder contains the source code and a detailed README.md file explaining:
 
-## How to Run
-1. Open the folder in VS Code.
-2. Run the file `calculator.py`.
-3. Enter two numbers when prompted.
-4. Choose the operation you want to perform (+, -, *, /).
-5. See the result printed on the screen.
+What the project does
 
-## Learnings
-- Functions and code reuse
-- Handling exceptions using try-except blocks
-- Working with user input
-- Basic error handling and edge case management
+The key Python concepts learned
+
+How to run the code
+
+Feel free to explore the folders to see the projects I've completed so far. My goal is to consistently add new projects and share my progress.
