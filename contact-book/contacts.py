@@ -1,5 +1,19 @@
 # This will be a list that holds all our contact dictionaries
-contacts = []
+import json
+FILE_NAME = "contacts.json"
+def save_contacts():
+    with open(FILE_NAME,"w") as file:
+        json.dump(contacts,file,indent=4)
+
+def load_contacts():
+    try:
+        with open(FILE_NAME,"r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return[]
+    
+
+contacts = load_contacts()
 
 def add_contact():
     """Gets user input and adds a new contact dictionary to the list."""
@@ -18,6 +32,7 @@ def add_contact():
 
     # Add the new dictionary to our main list
     contacts.append(new_contact)
+    save_contacts()
     print(f"\n Contact for '{name}' was added successfully!")
 
 def view_contacts():
