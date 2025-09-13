@@ -1,0 +1,37 @@
+[
+    {
+        "date": "2025-09-13",
+        "description": "school",
+        "amount": 10000.0
+    },
+    {
+        "date": "2025-09-13",
+        "description": "college",
+        "amount": 20000.0
+    },
+    {
+        "date": "2025-09-13",
+        "description": "tution",
+        "amount": 30000.0
+    },
+    {
+        "date": "2025-09-13",
+        "description": "school",
+        "amount": 90000.0
+    },
+    {
+        "date": "2025-09-13",
+        "description": "home",
+        "amount": 14000.0
+    },
+    {
+        "date": "2025-09-13",
+        "description": "college",
+        "amount": 78000.0
+    },
+    {
+        "date": "2025-09-13",
+        "description": "job 80000",
+        "amount": 80999.0
+    }
+]
