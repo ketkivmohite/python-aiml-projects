@@ -48,3 +48,5 @@ If you want to reach out, open an issue or PR in this repository.
 ---
 
 Happy learning!
+---
+*This portfolio is actively being developed. Follow along on my coding journey!*
