@@ -1,11 +1,19 @@
 # Python Calculator
 
-This is a simple calculator built using Python. It performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
+Simple command-line calculator that demonstrates basic arithmetic operations and user input handling.
+
+## Features
 
 ## Features
 - Addition, subtraction, multiplication, division
 - Handles division by zero gracefully
 - Input validation to ensure only numbers are accepted
+
+## Learnings
+- Functions and code reuse
+- Handling exceptions using try-except blocks
+- Working with user input
+- Basic error handling and edge case management
 
 ## How to Run
 1. Open the folder in VS Code.
@@ -13,9 +21,3 @@ This is a simple calculator built using Python. It performs basic arithmetic ope
 3. Enter two numbers when prompted.
 4. Choose the operation you want to perform (+, -, *, /).
 5. See the result printed on the screen.
-
-## Learnings
-- Functions and code reuse
-- Handling exceptions using try-except blocks
-- Working with user input
-- Basic error handling and edge case management
