@@ -6,7 +6,7 @@ def coinflip():
     # The `random.choice()` function will randomly pick one item from this list.
     result = random.choice(["Heads", "Tails"])
     
-    # Corrected the typo from "Thr" to "The"
+    
     print(f"\n...The coin lands on: {result}!...")
 
 
@@ -31,7 +31,6 @@ def main():
 
 
 # --- Start the game ---
-# This is the "Go" button that was missing.
 # It tells Python to run the main() function when the script starts.
 if __name__ == "__main__":
     main()
