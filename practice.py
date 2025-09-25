@@ -257,4 +257,84 @@
 
 # print(marks)
 
+#class = blueprint 
+# class cat :
+#     def __init__(self,name,age,favourite_activity):
+#         self.name = name 
+#         self.age = age
+#         self.favourite_activity = favourite_activity
+
+#     def greet(self):
+#         print(f"Meow! I'm {self.name} and I have to {self.favourite_activity}.")
+
+# marble = cat("Marble",2,"nap")
+# cookie = cat("cookie",4,"chase toys")
+# whiskers = cat("whiskers",3,"greet visitors")
+
+# marble.greet()
+# cookie.greet()
+
+#Create a class called Book that stores the title and author of a book. 
+# Add a method called display_info that prints out the book's title and author in a nice format. 
+# Then, create two objects of the Book class with different titles and authors, and call the display_info method for each object.
+
+# Hint:
+
+# Your class should have an __init__ method to set the title and author.
+
+# The display_info method should use self.title and self.author.
+
+# After creating your objects, use object_name.display_info() to call the method.
+
+# class Book:
+#     def __init__(self, title, author):
+#         self.title = title
+#         self.author = author
+
+#     def book(self):
+#         print(f"The book title is {self.title} and the author is {self.author}")
+
+# # Create objects outside the class definition
+# chanakyaneeti = Book("chanakyaneeti", "chanakya")
+# atomichabits = Book("atomichabits", "james clear")
+
+# # Call the method using objects
+# chanakyaneeti.book()
+# atomichabits.book()
+
+# class Animals:
+#     def __init__(self,type,age,make_sounds):
+#         self.type = type
+#         self.age = age
+#         self.make_sounds = make_sounds
+#     def animals(self):
+#         print(f"The animal is {self.type} it is {self.age} and it makes the sound {self.make_sounds}")
+
+# dog = Animals("dog",2,"woof")
+# cat = Animals("cat",3,"meow")
+
+# dog.animals()
+# cat.animals()
+
+class Person:
+    def __init__(self,firstname,lastname):
+        self.firstname = firstname
+        self.lastname = lastname
+
+    def fullname(self):
+        print(f"My name is {self.firstname} {self.lastname}")
+
+class Student(Person):
+    def __init__(self, firstname, lastname,graduationyear):
+        super().__init__(firstname, lastname)
+        self.graduationyear = graduationyear 
+
+    def welcome(self):
+        print(f"Welcome {self.firstname} {self.lastname} to the class of {self.graduationyear}")
+
+student1 = Student("Ketki", "Mohite", 2025)
+student1.fullname()
+student1.welcome()
+
+
     
