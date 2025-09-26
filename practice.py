@@ -316,25 +316,42 @@
 # dog.animals()
 # cat.animals()
 
-class Person:
-    def __init__(self,firstname,lastname):
-        self.firstname = firstname
-        self.lastname = lastname
+# class Person:
+#     def __init__(self,firstname,lastname):
+#         self.firstname = firstname
+#         self.lastname = lastname
 
-    def fullname(self):
-        print(f"My name is {self.firstname} {self.lastname}")
+#     def fullname(self):
+#         print(f"My name is {self.firstname} {self.lastname}")
 
-class Student(Person):
-    def __init__(self, firstname, lastname,graduationyear):
-        super().__init__(firstname, lastname)
-        self.graduationyear = graduationyear 
+# class Student(Person):
+#     def __init__(self, firstname, lastname,graduationyear):
+#         super().__init__(firstname, lastname)
+#         self.graduationyear = graduationyear 
 
-    def welcome(self):
-        print(f"Welcome {self.firstname} {self.lastname} to the class of {self.graduationyear}")
+#     def welcome(self):
+#         print(f"Welcome {self.firstname} {self.lastname} to the class of {self.graduationyear}")
 
-student1 = Student("Ketki", "Mohite", 2025)
-student1.fullname()
-student1.welcome()
+# student1 = Student("Ketki", "Mohite", 2025)
+# student1.fullname()
+# student1.welcome()
 
+# class Vehicle :
+#     def __init__(self,brand):
+#         self.brand = brand 
+
+#     def start(self):
+#         print("Vehicle Started ")
+
+# class Car(Vehicle):
+#     def __init__(self, brand, model):
+#         super().__init__(brand)
+#         self.model = model 
+#     def start(Self):
+#         print(f"Car Started {Self.brand} {Self.model}")
 
     
+# my_car = Car("Tata","Altroz")
+# my_car.start()
+# print(my_car.brand)
+
