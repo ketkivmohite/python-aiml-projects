@@ -355,3 +355,32 @@
 # my_car.start()
 # print(my_car.brand)
 
+
+#polymorphism
+# class Dog:
+#     def speak(Self):
+#         print("Woof!")
+
+# class Cat:
+#     def speak(self):
+#         print("Meow!")
+
+# animals = [Dog(),Cat()]
+
+# for animal in animals :
+#     animal.speak()
+
+# class Animal:
+#     def speak(self):
+#         print("Animal Speaks")
+
+# class Dog(Animal):
+#     def speak(self):
+#         print("Woof Woof")
+
+# animal = Animal()
+# animal.speak()
+
+# dog = Dog()
+# dog.speak()
+
