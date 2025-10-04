@@ -1,0 +1,16 @@
+[2025-10-04 22:13:33] You: hello
+[2025-10-04 22:13:33] ChatBot: Hello! How can I assist you today?
+[2025-10-04 22:13:48] You: how r u 
+[2025-10-04 22:13:48] ChatBot: I'm doing great, thanks for asking!
+[2025-10-04 22:13:58] You: your name 
+[2025-10-04 22:13:58] ChatBot: I'm your helpful Python chatbot.
+[2025-10-04 22:14:07] You: bye
+[2025-10-04 22:14:07] ChatBot: GoodBye! Have a great day!
+[2025-10-04 22:14:55] You: hello
+[2025-10-04 22:14:55] ChatBot: Hello! How can I assist you today?
+[2025-10-04 22:14:58] You: how r u 
+[2025-10-04 22:14:58] ChatBot: I'm doing great, thanks for asking!
+[2025-10-04 22:15:01] You: projects
+[2025-10-04 22:15:01] ChatBot: You can see my code on GitHub at https://github.com/ketkivmohite/python-aiml-projects.
+[2025-10-04 22:15:12] You: goodbye
+[2025-10-04 22:15:12] ChatBot: GoodBye! Have a great day!
