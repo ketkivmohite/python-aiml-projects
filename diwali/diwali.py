@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from requests.exceptions import RequestException, Timeout, ConnectionError
+from requests.exceptions import RequestException, Timeout, ConnectionError, HTTPError
 
 # Load your Hugging Face token from Streamlit secrets
 try:
@@ -55,15 +55,17 @@ if st.button("Generate Greeting & Image"):
     except ConnectionError:
         st.error("Network connection error. Please check your internet connection.")
         greeting = f"Happy Diwali, {name}! 🪔"
-    except requests.exceptions.HTTPError as e:
-        if e.response.status_code == 429:
+    except HTTPError as e:
+        if hasattr(e, 'response') and e.response and e.response.status_code == 429:
             st.error("API rate limit exceeded. Please wait a moment and try again.")
-        elif e.response.status_code == 503:
+        elif hasattr(e, 'response') and e.response and e.response.status_code == 503:
             st.warning("Text generation model is currently loading. Please try again in a moment.")
-        elif e.response.status_code == 401:
+        elif hasattr(e, 'response') and e.response and e.response.status_code == 401:
             st.error("Authentication failed. Please check your API token.")
-        else:
+        elif hasattr(e, 'response') and e.response:
             st.error(f"HTTP error occurred: {e.response.status_code}")
+        else:
+            st.error("HTTP error occurred while generating text.")
         greeting = f"Happy Diwali, {name}! 🪔"
     except RequestException as e:
         st.error(f"Failed to generate greeting: {str(e)}")
@@ -89,7 +91,7 @@ if st.button("Generate Greeting & Image"):
         if img_response.content and len(img_response.content) > 0:
             try:
                 # Check if response is JSON (error message) or binary (image)
-                content_type = img_response.headers.get('content-type', '')
+                content_type = img_response.headers.get('content-type', '').lower()
                 if 'application/json' in content_type:
                     error_data = img_response.json()
                     if 'error' in error_data:
@@ -110,14 +112,16 @@ if st.button("Generate Greeting & Image"):
         st.error("Image generation request timed out. Please try again.")
     except ConnectionError:
         st.error("Network connection error while generating image.")
-    except requests.exceptions.HTTPError as e:
-        if e.response.status_code == 429:
+    except HTTPError as e:
+        if hasattr(e, 'response') and e.response and e.response.status_code == 429:
             st.error("API rate limit exceeded for image generation. Please wait and try again.")
-        elif e.response.status_code == 503:
+        elif hasattr(e, 'response') and e.response and e.response.status_code == 503:
             st.warning("Image generation model is currently loading. Please try again in a moment.")
-        elif e.response.status_code == 401:
+        elif hasattr(e, 'response') and e.response and e.response.status_code == 401:
             st.error("Authentication failed for image generation. Please check your API token.")
-        else:
+        elif hasattr(e, 'response') and e.response:
             st.error(f"HTTP error occurred during image generation: {e.response.status_code}")
+        else:
+            st.error("HTTP error occurred during image generation.")
     except RequestException as e:
         st.error(f"Failed to generate image: {str(e)}")
