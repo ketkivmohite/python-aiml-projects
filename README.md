@@ -6,15 +6,46 @@ Each project lives in its own folder and includes a README explaining what it do
 
 ## Projects
 
-- `calculator/` — Simple calculator examples in `calculator.py`.
-- `contact-book/` — Small contact manager using `contacts.json` and `contacts.py`.
-- `expense-tracker/` — Expense tracking examples stored in `expenses.json` with `tracker.py`.
-- `gif-maker/` — Script that creates GIFs from images (`gif.py`).
-- `guess-word/` — Word guessing game (`guess.py`).
-- `quiz-game/` — Interactive quiz implemented in `quiz.py`.
-- `todoapp/` — Basic command-line TODO application (`todoapp.py`).
+### Core Learning Projects
 
-If you see other folders, check their README files for details.
+- `calculator/` — Simple calculator with basic arithmetic operations (+, -, *, /)
+- `contact-book/` — Command-line contact manager with JSON persistence
+- `expense-tracker/` — Track expenses with date, description and amount
+- `gif-maker/` — Create animated GIFs from image files using imageio
+- `guess-word/` — Word guessing game with limited attempts
+- `quiz-game/` — Multiple-choice quiz with score tracking
+- `todoapp/` — Command-line to-do list application
+
+### Additional Projects
+
+- `banksystem-oops/` — Banking system using OOP concepts
+- `bmi-calculator/` — BMI (Body Mass Index) calculator
+- `coin-flipper/` — Random coin flip simulator
+- `countdown-timer/` — Simple countdown timer application
+- `date-and-time/` — Date and time manipulation examples
+- `day-21-payment-system-polymorphism/` — Payment system demonstrating polymorphism
+- `day-24-shopping-cart-oops/` — Shopping cart using object-oriented programming
+- `day-25-ChatBot/` — Simple chatbot implementation
+- `day-26-sentiment-analyzer/` — Text sentiment analysis tool
+- `day-27-news-summarizer/` — News article summarizer
+- `day-29-text-analyzer/` — Text analysis and statistics tool
+- `day-30-pomodoro/` — Pomodoro timer for productivity
+- `diwali/` — Diwali-themed project
+- `email-slicer/` — Extract username and domain from email addresses
+- `geeksforgeeks/` — Practice exercises from GeeksforGeeks
+- `google-search-history-project/` — Google search history analysis
+- `library-management-oop/` — Library management system using OOP
+- `mad-libs/` — Mad Libs word game
+- `metadata/` — File metadata extraction tool
+- `oops_practice_day19/` — OOP practice exercises
+- `password-generator/` — Random password generator
+- `personalized-greeting/` — Personalized greeting generator
+- `rock-paper-scissors/` — Rock-paper-scissors game
+- `school-system-oop/` — School management system using OOP
+- `studentgrade-simplilearn/` — Student grade management system
+- `weather-app/` — Weather information application
+
+Each project folder contains its own README with detailed information.
 
 ## Quick start
 
@@ -48,5 +79,5 @@ If you want to reach out, open an issue or PR in this repository.
 ---
 
 Happy learning!
----
+
 *This portfolio is actively being developed. Follow along on my coding journey!*
